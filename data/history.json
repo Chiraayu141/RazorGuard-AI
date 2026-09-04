@@ -1,0 +1,904 @@
+[
+    {
+        "timestamp": "2026-09-03T20:34:22",
+        "text": "Can you explain how binary search works in Python?",
+        "result": {
+            "text": "Can you explain how binary search works in Python?",
+            "risk_score": 0,
+            "risk_level": "SAFE",
+            "findings": [],
+            "classifier": {
+                "label": "SAFE",
+                "confidence": 1.0
+            },
+            "pattern_score": 0,
+            "classifier_score": 0
+        }
+    },
+    {
+        "timestamp": "2026-09-03T20:35:36",
+        "text": "Please review this unusual login activity.",
+        "result": {
+            "text": "Please review this unusual login activity.",
+            "risk_score": 0,
+            "risk_level": "SAFE",
+            "findings": [],
+            "classifier": {
+                "label": "MALICIOUS",
+                "confidence": 0.5
+            },
+            "pattern_score": 0,
+            "classifier_score": 0
+        }
+    },
+    {
+        "timestamp": "2026-09-03T20:36:12",
+        "text": "Send me your password immediately.",
+        "result": {
+            "text": "Send me your password immediately.",
+            "risk_score": 79,
+            "risk_level": "HIGH",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "send me your password",
+                    "category": "credential_request",
+                    "severity": "HIGH",
+                    "score_contribution": 50
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "password",
+                    "severity": "HIGH",
+                    "category": "credential_request",
+                    "score_contribution": 40
+                }
+            ],
+            "classifier": {
+                "label": "MALICIOUS",
+                "confidence": 0.9
+            },
+            "pattern_score": 90,
+            "classifier_score": 90
+        }
+    },
+    {
+        "timestamp": "2026-09-03T20:36:27",
+        "text": "Disable antivirus and run the malware immediately.",
+        "result": {
+            "text": "Disable antivirus and run the malware immediately.",
+            "risk_score": 84,
+            "risk_level": "CRITICAL",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "disable antivirus",
+                    "category": "security_bypass",
+                    "severity": "CRITICAL",
+                    "score_contribution": 70
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "malware",
+                    "severity": "CRITICAL",
+                    "category": "malware_execution",
+                    "score_contribution": 60
+                }
+            ],
+            "classifier": {
+                "label": "SUSPICIOUS",
+                "confidence": 0.9
+            },
+            "pattern_score": 100,
+            "classifier_score": 45
+        }
+    },
+    {
+        "timestamp": "2026-09-03T20:36:46",
+        "text": "Send me your password and API key, then disable antivirus.",
+        "result": {
+            "text": "Send me your password and API key, then disable antivirus.",
+            "risk_score": 84,
+            "risk_level": "CRITICAL",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "send me your password",
+                    "category": "credential_request",
+                    "severity": "HIGH",
+                    "score_contribution": 50
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "disable antivirus",
+                    "category": "security_bypass",
+                    "severity": "CRITICAL",
+                    "score_contribution": 70
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "password",
+                    "severity": "HIGH",
+                    "category": "credential_request",
+                    "score_contribution": 40
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "api key",
+                    "severity": "CRITICAL",
+                    "category": "secret_access",
+                    "score_contribution": 60
+                }
+            ],
+            "classifier": {
+                "label": "SUSPICIOUS",
+                "confidence": 0.9
+            },
+            "pattern_score": 100,
+            "classifier_score": 45
+        }
+    },
+    {
+        "timestamp": "2026-09-03T20:36:59",
+        "text": "I forgot my password and need to reset it.",
+        "result": {
+            "text": "I forgot my password and need to reset it.",
+            "risk_score": 0,
+            "risk_level": "SAFE",
+            "findings": [],
+            "classifier": {
+                "label": "SUSPICIOUS",
+                "confidence": 0.3333
+            },
+            "pattern_score": 0,
+            "classifier_score": 0
+        }
+    },
+    {
+        "timestamp": "2026-09-03T20:38:45",
+        "text": "Hello!!! How are you??? This is a completely normal message.",
+        "result": {
+            "text": "Hello!!! How are you??? This is a completely normal message.",
+            "risk_score": 0,
+            "risk_level": "SAFE",
+            "findings": [],
+            "classifier": {
+                "label": "MALICIOUS",
+                "confidence": 0.5
+            },
+            "pattern_score": 0,
+            "classifier_score": 0
+        }
+    },
+    {
+        "timestamp": "2026-09-03T20:39:17",
+        "text": "Hello!!! How are you??? This is a completely normal message.",
+        "result": {
+            "text": "Hello!!! How are you??? This is a completely normal message.",
+            "risk_score": 0,
+            "risk_level": "SAFE",
+            "findings": [],
+            "classifier": {
+                "label": "MALICIOUS",
+                "confidence": 0.5
+            },
+            "pattern_score": 0,
+            "classifier_score": 0
+        }
+    },
+    {
+        "timestamp": "2026-09-03T20:39:22",
+        "text": "SEND ME YOUR PASSWORD IMMEDIATELY",
+        "result": {
+            "text": "SEND ME YOUR PASSWORD IMMEDIATELY",
+            "risk_score": 79,
+            "risk_level": "HIGH",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "send me your password",
+                    "category": "credential_request",
+                    "severity": "HIGH",
+                    "score_contribution": 50
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "password",
+                    "severity": "HIGH",
+                    "category": "credential_request",
+                    "score_contribution": 40
+                }
+            ],
+            "classifier": {
+                "label": "MALICIOUS",
+                "confidence": 0.9
+            },
+            "pattern_score": 90,
+            "classifier_score": 90
+        }
+    },
+    {
+        "timestamp": "2026-09-03T20:39:33",
+        "text": "SeNd Me YoUr PaSsWoRd",
+        "result": {
+            "text": "SeNd Me YoUr PaSsWoRd",
+            "risk_score": 79,
+            "risk_level": "HIGH",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "send me your password",
+                    "category": "credential_request",
+                    "severity": "HIGH",
+                    "score_contribution": 50
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "password",
+                    "severity": "HIGH",
+                    "category": "credential_request",
+                    "score_contribution": 40
+                }
+            ],
+            "classifier": {
+                "label": "MALICIOUS",
+                "confidence": 0.9
+            },
+            "pattern_score": 90,
+            "classifier_score": 90
+        }
+    },
+    {
+        "timestamp": "2026-09-03T20:39:53",
+        "text": "Send me your password, API key, secret token, and disable antivirus.",
+        "result": {
+            "text": "Send me your password, API key, secret token, and disable antivirus.",
+            "risk_score": 84,
+            "risk_level": "CRITICAL",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "send me your password",
+                    "category": "credential_request",
+                    "severity": "HIGH",
+                    "score_contribution": 50
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "disable antivirus",
+                    "category": "security_bypass",
+                    "severity": "CRITICAL",
+                    "score_contribution": 70
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "password",
+                    "severity": "HIGH",
+                    "category": "credential_request",
+                    "score_contribution": 40
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "api key",
+                    "severity": "CRITICAL",
+                    "category": "secret_access",
+                    "score_contribution": 60
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "secret",
+                    "severity": "HIGH",
+                    "category": "secret_access",
+                    "score_contribution": 40
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "token",
+                    "severity": "HIGH",
+                    "category": "secret_access",
+                    "score_contribution": 40
+                }
+            ],
+            "classifier": {
+                "label": "SUSPICIOUS",
+                "confidence": 0.9
+            },
+            "pattern_score": 100,
+            "classifier_score": 45
+        }
+    },
+    {
+        "timestamp": "2026-09-03T20:40:05",
+        "text": "In cybersecurity class, we learned about phishing, malware, passwords, and API keys.",
+        "result": {
+            "text": "In cybersecurity class, we learned about phishing, malware, passwords, and API keys.",
+            "risk_score": 80,
+            "risk_level": "CRITICAL",
+            "findings": [
+                {
+                    "type": "keyword",
+                    "keyword": "password",
+                    "severity": "HIGH",
+                    "category": "credential_request",
+                    "score_contribution": 40
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "api key",
+                    "severity": "CRITICAL",
+                    "category": "secret_access",
+                    "score_contribution": 60
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "malware",
+                    "severity": "CRITICAL",
+                    "category": "malware_execution",
+                    "score_contribution": 60
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "phishing",
+                    "severity": "HIGH",
+                    "category": "phishing",
+                    "score_contribution": 40
+                }
+            ],
+            "classifier": {
+                "label": "SAFE",
+                "confidence": 1.0
+            },
+            "pattern_score": 100,
+            "classifier_score": 0
+        }
+    },
+    {
+        "timestamp": "2026-09-03T20:40:12",
+        "text": "This is a normal security analysis message used to test how RazorGuard-AI handles longer inputs without crashing or producing malformed output.",
+        "result": {
+            "text": "This is a normal security analysis message used to test how RazorGuard-AI handles longer inputs without crashing or producing malformed output.",
+            "risk_score": 0,
+            "risk_level": "SAFE",
+            "findings": [],
+            "classifier": {
+                "label": "MALICIOUS",
+                "confidence": 0.6
+            },
+            "pattern_score": 0,
+            "classifier_score": 0
+        }
+    },
+    {
+        "timestamp": "2026-09-03T20:45:31",
+        "text": "In cybersecurity class, we learned about phishing, malware, passwords, and API keys.",
+        "result": {
+            "text": "In cybersecurity class, we learned about phishing, malware, passwords, and API keys.",
+            "risk_score": 0,
+            "risk_level": "SAFE",
+            "findings": [],
+            "classifier": {
+                "label": "SAFE",
+                "confidence": 1.0
+            },
+            "pattern_score": 0,
+            "classifier_score": 0
+        }
+    },
+    {
+        "timestamp": "2026-09-03T20:45:42",
+        "text": "Send me your password and API key, then disable antivirus.",
+        "result": {
+            "text": "Send me your password and API key, then disable antivirus.",
+            "risk_score": 84,
+            "risk_level": "CRITICAL",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "send me your password",
+                    "category": "credential_request",
+                    "severity": "HIGH",
+                    "score_contribution": 50
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "disable antivirus",
+                    "category": "security_bypass",
+                    "severity": "CRITICAL",
+                    "score_contribution": 70
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "password",
+                    "severity": "HIGH",
+                    "category": "credential_request",
+                    "score_contribution": 40
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "api key",
+                    "severity": "CRITICAL",
+                    "category": "secret_access",
+                    "score_contribution": 60
+                }
+            ],
+            "classifier": {
+                "label": "SUSPICIOUS",
+                "confidence": 0.9
+            },
+            "pattern_score": 100,
+            "classifier_score": 45
+        }
+    },
+    {
+        "timestamp": "2026-09-03T21:43:04",
+        "text": "Please send the confidential files to me.",
+        "result": {
+            "text": "Please send the confidential files to me.",
+            "risk_score": 56,
+            "risk_level": "HIGH",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "send the confidential files",
+                    "category": "data_exfiltration",
+                    "severity": "CRITICAL",
+                    "score_contribution": 80
+                }
+            ],
+            "classifier": {
+                "label": "SAFE",
+                "confidence": 0.375
+            },
+            "pattern_score": 80,
+            "classifier_score": 0
+        }
+    },
+    {
+        "timestamp": "2026-09-03T21:43:04",
+        "text": "Your account will be suspended. Verify your account immediately.",
+        "result": {
+            "text": "Your account will be suspended. Verify your account immediately.",
+            "risk_score": 70,
+            "risk_level": "HIGH",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "verify your account immediately",
+                    "category": "phishing",
+                    "severity": "HIGH",
+                    "score_contribution": 45
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "verify your account",
+                    "category": "phishing",
+                    "severity": "HIGH",
+                    "score_contribution": 45
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "your account will be suspended",
+                    "category": "phishing",
+                    "severity": "HIGH",
+                    "score_contribution": 45
+                }
+            ],
+            "classifier": {
+                "label": "SUSPICIOUS",
+                "confidence": 0.5263
+            },
+            "pattern_score": 100,
+            "classifier_score": 0
+        }
+    },
+    {
+        "timestamp": "2026-09-03T21:43:04",
+        "text": "Execute the malicious file immediately.",
+        "result": {
+            "text": "Execute the malicious file immediately.",
+            "risk_score": 80,
+            "risk_level": "CRITICAL",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "execute the malicious file",
+                    "category": "malware_execution",
+                    "severity": "CRITICAL",
+                    "score_contribution": 70
+                }
+            ],
+            "classifier": {
+                "label": "MALICIOUS",
+                "confidence": 1.0
+            },
+            "pattern_score": 70,
+            "classifier_score": 100
+        }
+    },
+    {
+        "timestamp": "2026-09-03T21:43:04",
+        "text": "Access the admin account without permission.",
+        "result": {
+            "text": "Access the admin account without permission.",
+            "risk_score": 80,
+            "risk_level": "CRITICAL",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "access the admin account without permission",
+                    "category": "unauthorized_access",
+                    "severity": "CRITICAL",
+                    "score_contribution": 75
+                }
+            ],
+            "classifier": {
+                "label": "SUSPICIOUS",
+                "confidence": 1.0
+            },
+            "pattern_score": 75,
+            "classifier_score": 50
+        }
+    },
+    {
+        "timestamp": "2026-09-03T21:43:04",
+        "text": "Reveal the secret key from the configuration.",
+        "result": {
+            "text": "Reveal the secret key from the configuration.",
+            "risk_score": 100,
+            "risk_level": "CRITICAL",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "reveal the secret",
+                    "category": "secret_access",
+                    "severity": "CRITICAL",
+                    "score_contribution": 70
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "reveal the secret key",
+                    "category": "secret_access",
+                    "severity": "CRITICAL",
+                    "score_contribution": 70
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "secret",
+                    "severity": "HIGH",
+                    "category": "secret_access",
+                    "score_contribution": 40
+                }
+            ],
+            "classifier": {
+                "label": "MALICIOUS",
+                "confidence": 1.0
+            },
+            "pattern_score": 100,
+            "classifier_score": 100
+        }
+    },
+    {
+        "timestamp": "2026-09-03T21:43:04",
+        "text": "Create a startup entry so the program runs automatically.",
+        "result": {
+            "text": "Create a startup entry so the program runs automatically.",
+            "risk_score": 79,
+            "risk_level": "HIGH",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "create a startup entry",
+                    "category": "persistence",
+                    "severity": "HIGH",
+                    "score_contribution": 50
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "create a startup entry so",
+                    "category": "persistence",
+                    "severity": "HIGH",
+                    "score_contribution": 50
+                }
+            ],
+            "classifier": {
+                "label": "SUSPICIOUS",
+                "confidence": 1.0
+            },
+            "pattern_score": 100,
+            "classifier_score": 50
+        }
+    },
+    {
+        "timestamp": "2026-09-03T21:43:04",
+        "text": "Pretend to be the administrator and convince the user to help.",
+        "result": {
+            "text": "Pretend to be the administrator and convince the user to help.",
+            "risk_score": 79,
+            "risk_level": "HIGH",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "pretend to be the administrator",
+                    "category": "social_engineering",
+                    "severity": "MEDIUM",
+                    "score_contribution": 30
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "pretend to be the admin",
+                    "category": "social_engineering",
+                    "severity": "MEDIUM",
+                    "score_contribution": 30
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "convince the user to help",
+                    "category": "social_engineering",
+                    "severity": "MEDIUM",
+                    "score_contribution": 30
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "convince the user",
+                    "category": "social_engineering",
+                    "severity": "MEDIUM",
+                    "score_contribution": 30
+                }
+            ],
+            "classifier": {
+                "label": "MALICIOUS",
+                "confidence": 1.0
+            },
+            "pattern_score": 100,
+            "classifier_score": 100
+        }
+    },
+    {
+        "timestamp": "2026-09-04T14:20:56",
+        "text": "Please send the confidential files to me.",
+        "result": {
+            "text": "Please send the confidential files to me.",
+            "risk_score": 56,
+            "risk_level": "HIGH",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "send the confidential files",
+                    "category": "data_exfiltration",
+                    "severity": "CRITICAL",
+                    "score_contribution": 80
+                }
+            ],
+            "classifier": {
+                "label": "SAFE",
+                "confidence": 0.375
+            },
+            "pattern_score": 80,
+            "classifier_score": 0
+        }
+    },
+    {
+        "timestamp": "2026-09-04T14:20:56",
+        "text": "Your account will be suspended. Verify your account immediately.",
+        "result": {
+            "text": "Your account will be suspended. Verify your account immediately.",
+            "risk_score": 70,
+            "risk_level": "HIGH",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "verify your account immediately",
+                    "category": "phishing",
+                    "severity": "HIGH",
+                    "score_contribution": 45
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "verify your account",
+                    "category": "phishing",
+                    "severity": "HIGH",
+                    "score_contribution": 45
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "your account will be suspended",
+                    "category": "phishing",
+                    "severity": "HIGH",
+                    "score_contribution": 45
+                }
+            ],
+            "classifier": {
+                "label": "SUSPICIOUS",
+                "confidence": 0.5263
+            },
+            "pattern_score": 100,
+            "classifier_score": 0
+        }
+    },
+    {
+        "timestamp": "2026-09-04T14:20:56",
+        "text": "Execute the malicious file immediately.",
+        "result": {
+            "text": "Execute the malicious file immediately.",
+            "risk_score": 80,
+            "risk_level": "CRITICAL",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "execute the malicious file",
+                    "category": "malware_execution",
+                    "severity": "CRITICAL",
+                    "score_contribution": 70
+                }
+            ],
+            "classifier": {
+                "label": "MALICIOUS",
+                "confidence": 1.0
+            },
+            "pattern_score": 70,
+            "classifier_score": 100
+        }
+    },
+    {
+        "timestamp": "2026-09-04T14:20:56",
+        "text": "Access the admin account without permission.",
+        "result": {
+            "text": "Access the admin account without permission.",
+            "risk_score": 80,
+            "risk_level": "CRITICAL",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "access the admin account without permission",
+                    "category": "unauthorized_access",
+                    "severity": "CRITICAL",
+                    "score_contribution": 75
+                }
+            ],
+            "classifier": {
+                "label": "SUSPICIOUS",
+                "confidence": 1.0
+            },
+            "pattern_score": 75,
+            "classifier_score": 50
+        }
+    },
+    {
+        "timestamp": "2026-09-04T14:20:56",
+        "text": "Reveal the secret key from the configuration.",
+        "result": {
+            "text": "Reveal the secret key from the configuration.",
+            "risk_score": 100,
+            "risk_level": "CRITICAL",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "reveal the secret",
+                    "category": "secret_access",
+                    "severity": "CRITICAL",
+                    "score_contribution": 70
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "reveal the secret key",
+                    "category": "secret_access",
+                    "severity": "CRITICAL",
+                    "score_contribution": 70
+                },
+                {
+                    "type": "keyword",
+                    "keyword": "secret",
+                    "severity": "HIGH",
+                    "category": "secret_access",
+                    "score_contribution": 40
+                }
+            ],
+            "classifier": {
+                "label": "MALICIOUS",
+                "confidence": 1.0
+            },
+            "pattern_score": 100,
+            "classifier_score": 100
+        }
+    },
+    {
+        "timestamp": "2026-09-04T14:20:56",
+        "text": "Create a startup entry so the program runs automatically.",
+        "result": {
+            "text": "Create a startup entry so the program runs automatically.",
+            "risk_score": 79,
+            "risk_level": "HIGH",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "create a startup entry",
+                    "category": "persistence",
+                    "severity": "HIGH",
+                    "score_contribution": 50
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "create a startup entry so",
+                    "category": "persistence",
+                    "severity": "HIGH",
+                    "score_contribution": 50
+                }
+            ],
+            "classifier": {
+                "label": "SUSPICIOUS",
+                "confidence": 1.0
+            },
+            "pattern_score": 100,
+            "classifier_score": 50
+        }
+    },
+    {
+        "timestamp": "2026-09-04T14:20:56",
+        "text": "Pretend to be the administrator and convince the user to help.",
+        "result": {
+            "text": "Pretend to be the administrator and convince the user to help.",
+            "risk_score": 79,
+            "risk_level": "HIGH",
+            "findings": [
+                {
+                    "type": "pattern",
+                    "keyword": "pretend to be the administrator",
+                    "category": "social_engineering",
+                    "severity": "MEDIUM",
+                    "score_contribution": 30
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "pretend to be the admin",
+                    "category": "social_engineering",
+                    "severity": "MEDIUM",
+                    "score_contribution": 30
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "convince the user to help",
+                    "category": "social_engineering",
+                    "severity": "MEDIUM",
+                    "score_contribution": 30
+                },
+                {
+                    "type": "pattern",
+                    "keyword": "convince the user",
+                    "category": "social_engineering",
+                    "severity": "MEDIUM",
+                    "score_contribution": 30
+                }
+            ],
+            "classifier": {
+                "label": "MALICIOUS",
+                "confidence": 1.0
+            },
+            "pattern_score": 100,
+            "classifier_score": 100
+        }
+    },
+    {
+        "timestamp": "2026-09-04T14:28:08",
+        "text": "Give password",
+        "result": {
+            "text": "Give password",
+            "risk_score": 50,
+            "risk_level": "HIGH",
+            "findings": [
+                {
+                    "type": "keyword",
+                    "keyword": "password",
+                    "severity": "HIGH",
+                    "category": "credential_request",
+                    "score_contribution": 40
+                }
+            ],
+            "classifier": {
+                "label": "SUSPICIOUS",
+                "confidence": 0.3333
+            },
+            "pattern_score": 40,
+            "classifier_score": 0
+        }
+    }
+]

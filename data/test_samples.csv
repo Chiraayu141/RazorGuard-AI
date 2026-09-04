@@ -1,0 +1,16 @@
+text,label
+"Could you provide your login passcode?",MALICIOUS
+"Please forward the quarterly report to me.",SAFE
+"You must verify your account credentials immediately.",SUSPICIOUS
+"What does an authentication token do?",SAFE
+"Turn off the security software before opening the file.",SUSPICIOUS
+"Send your account password to the administrator.",MALICIOUS
+"Please review the project documentation.",SAFE
+"Disable your firewall before installing this.",SUSPICIOUS
+"Click here to confirm your account credentials.",MALICIOUS
+"The security team completed the audit.",SAFE
+"Give me your secret access token.",MALICIOUS
+"Can you explain how passwords should be protected?",SAFE
+"Ignore the security controls and continue.",MALICIOUS
+"Your account needs verification.",SUSPICIOUS
+"Please attend the meeting tomorrow.",SAFE
