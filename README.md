@@ -58,6 +58,22 @@ The project is designed as a practical demonstration of **cybersecurity automati
 
 ---
 
+## 📸 Demo
+
+### 🔍 Security Analysis
+
+The Gradio interface provides an interactive security analysis dashboard where users can submit text and receive a risk assessment, security findings, and AI classification.
+
+![RazorGuard-AI Analysis](screenshots/razor_guard_analysis.png)
+
+### 📋 Analysis History
+
+RazorGuard-AI also maintains a history of previously analyzed messages, allowing users to review earlier security assessments.
+
+![RazorGuard-AI History](screenshots/razor_guard_history.png)
+
+---
+
 ## 🧠 How RazorGuard-AI Works
 
 RazorGuard-AI uses a multi-stage analysis pipeline.
@@ -281,6 +297,10 @@ RazorGuard-AI/
 ├── pytest.ini
 ├── README.md
 │
+├── screenshots/
+│   ├── razor_guard_analysis.png
+│   └── razor_guard_history.png
+│
 ├── core/
 │   ├── analyzer.py
 │   ├── patterns.py
@@ -402,6 +422,7 @@ This allows known security indicators to be detected explicitly while AI provide
 * [x] Gradio interface
 * [x] Requirements file
 * [x] GitHub repository
+* [x] Demo screenshots
 * [ ] Improved AI model training
 * [ ] Expanded cybersecurity datasets
 * [ ] Advanced threat categorization
